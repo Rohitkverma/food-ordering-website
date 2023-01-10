@@ -1,0 +1,256 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* css variables */
+
+:root{
+    --navbar-height: 28px;
+}
+
+/* nevigation bar  */
+#nevbar{
+    display: flex;
+    align-items: center;
+}
+
+/* nevigation bar: logo and images */
+
+#logo{
+    margin: 6px 5px;
+}
+
+#logo img{
+    margin: 2px 24px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 20px -12px white;
+}
+/* nevigation bar: list styleing */
+#nevbar{
+    position:relative;
+}
+#nevbar ul{
+    display: flex;
+    
+}
+
+#nevbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#nevbar ul{
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+#nevbar ul li a{
+    font-family: "Trirong", serif;
+    display: block;
+    text-decoration: none;
+    border-radius: 22px;
+    padding: 2px 30px;
+    color: white;
+}
+#nevbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 4px 200px;
+    height: 561px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background:url('../bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 657px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    top: 0px;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    
+}
+#home p{
+    color: white;
+    font-size: 1.5rem;
+    padding: 5px 2px;
+}
+
+/* services section  */
+
+#services{
+    margin: 18px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    margin: 2px 8px;
+    background-color: rgb(229, 238, 236);
+    border-radius: 15px;
+    padding: 10px 18px;
+    box-shadow: 4px 4px 6px black;
+    margin-bottom: 20px;
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    text-align: center;
+    font-size: 1rem;
+    font-family:  sans-serif;
+    font-weight: 500;
+}
+
+
+/* clint section  */
+#client-section{
+    /* height: 344px; */
+    position: relative;
+    padding-bottom: 100px;
+
+}
+#client-section::before{
+    content: "";
+    background: url('../bg2.jpg') no-repeat center center/cover;
+    position : absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.client-item{
+    padding: 34px;
+}
+#client img{
+    height: 100px;
+
+}
+
+/* contect section  */
+
+#contect{
+    position: relative;
+    /* height: 500px; */
+}
+#contect::before{
+    content: "";
+    background: url('../contact.jpg') no-repeat center center/cover;
+    position : absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0px;
+    opacity: 0.7;
+}
+
+#contect-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+    padding-top: 20px;
+}
+#contect-box input,
+#contect-box textarea{
+    width: 100%;
+    padding: .5rem;
+    font-size: 1rem;
+    border-radius: 10px;
+
+}
+
+#contect-box form{
+    width: 45%;
+}
+#contect-box form .btn1{
+    margin: 15px auto;
+    display: block;
+    padding: 5px 12px;
+    border: 2px solid white;
+    background-color: rgb(80, 58, 58);
+    color: white;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+#contect-box form .btn1:hover{
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+}
+#contect-box label{
+    font-size: 1.4rem;
+    font-family: "Trirong", serif;
+    font-weight: bold;
+}
+
+
+/* footer  */
+footer{
+    background-color: black;
+    color: white;
+    padding: 6px 22px;
+    text-align: center;
+}
+/* utility classes */
+.h-primary{
+    font-size: 2.5rem;
+    padding: 5px;
+    /* margin-top: 10px; */
+    font-family: "Trirong", serif;
+    text-align: center;
+}
+.h-secondary{
+    font-family: "Trirong", serif;
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 5px 12px;
+    margin: 15px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.4s ease;
+    text-align: center;
+}
+.btn:hover{
+    color: #000;
+    background-color: #fff;
+    border: 2px solid #000;
+}
